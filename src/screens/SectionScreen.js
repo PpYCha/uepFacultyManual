@@ -3,7 +3,6 @@ import React, {useState} from 'react';
 import CustomInput from '../components/CustomInput';
 import CustomButton from '../components/CustomButton';
 
-
 const SectionScreen = ({navigation}) => {
   const [section, setSection] = useState();
   const [title, setTitle] = useState();
@@ -35,5 +34,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#F1F6FE',
     flex: 1,
     padding: 10,
+    color: 'black',
   },
 });

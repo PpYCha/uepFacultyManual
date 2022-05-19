@@ -15,7 +15,7 @@ import DatePicker from 'react-native-date-picker';
 import DropDownPicker from 'react-native-dropdown-picker';
 import data from '../model/data';
 
-const SignUpScreen = ({navigation}) => {
+const UserScreen = ({navigation}) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [fullName, setFullName] = useState();
@@ -374,7 +374,7 @@ const SignUpScreen = ({navigation}) => {
   );
 };
 
-export default SignUpScreen;
+export default UserScreen;
 
 const styles = StyleSheet.create({
   container: {

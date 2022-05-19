@@ -29,12 +29,17 @@ const CustomInput = ({
             </View>
             <View style={{flex: 1}}>
               <TextInput
+                editable={editable}
                 value={value}
                 secureTextEntry={secureTextEntry}
                 multiline
                 numberOfLines={10}
                 onChangeText={onChangeText}
-                style={{textAlignVertical: 'top', textAlign: 'justify'}}
+                style={{
+                  textAlignVertical: 'top',
+                  textAlign: 'justify',
+                  color: 'black',
+                }}
               />
             </View>
           </View>
@@ -57,6 +62,7 @@ const CustomInput = ({
                 editable={editable}
                 secureTextEntry={secureTextEntry}
                 onChangeText={onChangeText}
+                style={styles.singleText}
               />
             </View>
           </View>
@@ -75,7 +81,8 @@ const styles = StyleSheet.create({
     margin: 10,
     padding: 10,
   },
-  header: {},
-  input: {},
+  header: {color: 'black'},
+  input: {color: 'black'},
+  singleText: {color: 'black'},
   icon: {marginTop: 17, marginRight: 5},
 });

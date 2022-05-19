@@ -88,26 +88,25 @@ const AddManualScreen = ({route, navigation}) => {
   return (
     <ScrollView>
       <View>
-        <CustomInput
-          value={section1}
-          textName="Section"
-          onChangeText={text => setSection(text)}
-        />
-        <CustomInput
-          textName="Title"
-          value={title1}
-          onChangeText={text => setTitle(text)}
-        />
-        <CustomInput
-          value={content1}
-          typeOfInput="multiline"
-          numberOfLines={10}
-          textName="Content"
-          onChangeText={text => setContent(text)}
-        />
-
         {typeOfUser == 'admin' ? (
           <>
+            <CustomInput
+              value={section1}
+              textName="Section"
+              onChangeText={text => setSection(text)}
+            />
+            <CustomInput
+              textName="Title"
+              value={title1}
+              onChangeText={text => setTitle(text)}
+            />
+            <CustomInput
+              value={content1}
+              typeOfInput="multiline"
+              numberOfLines={10}
+              textName="Content"
+              onChangeText={text => setContent(text)}
+            />
             <CustomButton
               textName="Save"
               backgroundColor="#3E4684"
@@ -120,7 +119,28 @@ const AddManualScreen = ({route, navigation}) => {
             />
           </>
         ) : (
-          <></>
+          <>
+            <CustomInput
+              value={section1}
+              textName="Section"
+              onChangeText={text => setSection(text)}
+              editable={false}
+            />
+            <CustomInput
+              textName="Title"
+              value={title1}
+              onChangeText={text => setTitle(text)}
+              editable={false}
+            />
+            <CustomInput
+              value={content1}
+              typeOfInput="multiline"
+              numberOfLines={10}
+              textName="Content"
+              onChangeText={text => setContent(text)}
+              editable={false}
+            />
+          </>
         )}
       </View>
     </ScrollView>

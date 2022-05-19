@@ -139,6 +139,7 @@ const styles = StyleSheet.create({
     padding: 5,
     flex: 1,
     marginTop: StatusBar.currentHeight || 0,
+    color: 'black',
   },
   item: {
     padding: 10,
@@ -146,9 +147,11 @@ const styles = StyleSheet.create({
     marginHorizontal: 10,
     borderRadius: 10,
     backgroundColor: '#ffffff',
+    color: 'black',
   },
   title: {
     fontSize: 15,
     textAlign: 'center',
+    color: 'black',
   },
 });

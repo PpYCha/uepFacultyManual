@@ -19,6 +19,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import {AuthContext} from '../context/AuthContext';
 import SearchScreen from '../screens/SearchScreen';
 import ProfileScreen from '../screens/ProfileScreen';
+
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
@@ -77,6 +78,13 @@ const HomeStack = ({navigation}) => (
         headerShown: false,
       }}
     />
+    {/* <Stack.Screen
+      name="UserScreen"
+      component={UserScreen}
+      options={{
+        headerShown: false,
+      }}
+    /> */}
     <Stack.Screen
       name="SectionListScreen"
       component={SectionListScreen}

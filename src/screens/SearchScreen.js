@@ -92,6 +92,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#383838',
+    color: 'black',
   },
   headerLeft: {
     flexDirection: 'row',
@@ -102,9 +103,11 @@ const styles = StyleSheet.create({
     margin: 5,
     borderRadius: 5,
     textAlignVertical: 'top',
+    color: 'black',
   },
   searchIcon: {
     backgroundColor: '#F1F6FE',
+    color: 'black',
   },
   input: {
     flex: 1,
@@ -121,9 +124,11 @@ const styles = StyleSheet.create({
     marginHorizontal: 10,
     borderRadius: 10,
     backgroundColor: '#ffffff',
+    color: 'black',
   },
   title: {
     fontSize: 15,
     textAlign: 'center',
+    color: 'black',
   },
 });

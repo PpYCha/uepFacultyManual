@@ -67,7 +67,7 @@ const SignInScreen = ({navigation}) => {
             onPress={() => {
               navigation.navigate('SignUpScreen');
             }}>
-            <Text>Sign Up</Text>
+            <Text style={styles.sign}>Sign Up</Text>
           </TouchableOpacity>
         </View>
         <View style={styles.bottom}>
@@ -75,7 +75,7 @@ const SignInScreen = ({navigation}) => {
             onPress={() => {
               navigation.navigate('ResetPasswordScreen');
             }}>
-            <Text>Forgot Password?</Text>
+            <Text style={styles.forgot}>Forgot Password?</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -107,8 +107,15 @@ const styles = StyleSheet.create({
     fontSize: 40,
     fontWeight: '900',
     textAlign: 'center',
+    color: 'black',
   },
   bottom: {
     padding: 10,
+  },
+  forgot: {
+    color: 'black',
+  },
+  sign: {
+    color: 'black',
   },
 });
